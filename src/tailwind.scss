@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Poppins, sans-serif, system-ui;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 40rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 2rem;
+  background-color: #5e8dc2;
+  max-height: 700px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.form-control {
+  margin: 0.5rem 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font: inherit;
+  margin-top: 0.5rem;
+}
+
+.button-contact {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font: inherit;
+  border: 1px solid #2097db;
+  background-color: #0e5b88;
+  color: white;
+  cursor: pointer;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+}
+
+.button-user {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font: inherit;
+  color: white;
+  cursor: pointer;
+  padding: 0.75rem 2rem;
+}
+
+.button-contact:hover,
+.button-contact:active {
+  border-color: #3e22bb;
+  background-color: #1a2e8f;
+}
+
+.input-form {
+  @apply p-1 rounded-xl placeholder:italic px-5 py-2 outline-none
+}
+
+.login {
+  margin-left: 0;
+
+}
+
+.alinhar-ao-centro {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer-title {
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 4px; 
+  font-size: large;
+  color: white;
+  font-weight: bold;
+  font-weight: bold;
+  font: bold;
+  font-size: x-large;
+}
+
+.footer-text:hover {
+  display: block;
+  color: #1697a8;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.format-title-header-list {
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 4px; 
+  font-size: large;
+  color: black;
+  font-weight: bold;
+}
+
+.format-title-header-list:hover {
+  color: #20a73e;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.header-table {
+  @apply text-center border-2 border-black text-black w-full bg-blue-500 text-sm
+}
+
+.body-challenge-0 {
+  @apply uppercase h-10 bg-gray-300
+}
+
+.body-challenge-1 {
+  @apply uppercase h-10 bg-white
+}
